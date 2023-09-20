@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+    <head>
+
+        <title>PŘESMYČKY</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Přesmyčky - anglicky">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        
+        <main>
+
+            <section>
+
+                <h2 title="Přesmyčky">Anagrams</h2>
+
+                <div style="text-align: center;">
+                    <p>Tvým úkolem bude složit z písmen hledané slovo (podstatné slovo) a napsat ho do pole dole.</p>
+                    <p>Některá slova jsou lehčí, jiná těžší a na každé slovo máš 30 vteřin i s lehkou nápovědou v angličtině.</p>
+                    <p>Pokliknutí na „START“ se ti začne automaticky odečítat čas.</p>
+                    <p>Tak se připrav, jdem na to.</p>
+                </div>
+                
+
+                <button id="start-button">START</button>
+
+                <div id="game-container" style="display: none;">
+                    <p id="scrambled-word"></p>
+                    <input style="font-size: 17px; padding: 10px;" type="text" id="guess" placeholder="Zadejte svou odpověď">
+                    <button style="font-size: 17px; padding: 10px;" id="check-button">Check</button>
+                    <p id="message"></p>
+                    <p id="timer">Time: <span id="time-left"></span> seconds</p>
+                    
+                    <div class="score">
+                        <p title="Odehraná kola"><span>&#127942;</span> Rounds played: <span style="margin-right: 50px;" id="rounds-played"></span></p>
+                        <p title="Správně"><span style="color: rgb(17, 180, 17);">&#10004;</span> Correct: <span style="margin-right: 50px;" id="correct"></span></p>
+                        <p title="Špatně"><span style="color: rgb(209, 20, 23);">&#10006;</span> Incorrect: <span id="incorrect"></span></p>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <script src="script.js"></script>
+        
+    </body>
+</html>

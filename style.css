@@ -1,0 +1,71 @@
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+
+html {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    cursor: default;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    width: 65%;
+    margin: 20px auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2::after {
+    content: " ";
+    display: block;
+    width: 30%;
+    height: 2px;
+    background-color: rgb(47, 80, 190);
+    margin: 10px auto;
+
+}
+
+#game-container {
+    text-align: center;
+    box-shadow: 0px 0px 15px 3px #4f99d2;
+    background-color: #c6d8e7;
+}
+
+#scrambled-word {
+    font-size: 45px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+#start-button {
+    font-size: 40px;
+    display: flex;
+    border: none;
+    border-radius: 20px;
+    background-color: #d6d4d4;
+    box-shadow: 0px 0px 15px 3px #9fa3a6;
+    padding: 50px 20px;
+    margin: 50px auto;
+    justify-content: center;
+    width: 50%;
+}
+
+#start-button:hover {
+    box-shadow: 0px 0px 15px 3px #4f99d2;
+    background-color: #c6d8e7;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
